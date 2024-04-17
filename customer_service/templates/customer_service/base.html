@@ -1,0 +1,35 @@
+<!-- customer_service/templates/customer_service/base.html -->
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Gas Utility Customer Service{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body bgcolor="beige">
+    <div class="container" >
+        <header>
+            <h1>Gas Utility Customer Service</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'service_request_list' %}">Home</a></li>   
+                <li><a href="{% url 'create_service_request' %}">CREATE</a></li>
+             
+
+
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer>
+            <p>&copy; 2024 Gas Utility Company</p>
+        </footer>
+    </div>
+</body>
+</html>

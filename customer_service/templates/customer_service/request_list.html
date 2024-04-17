@@ -1,0 +1,15 @@
+<!-- customer_service/templates/customer_service/request_list.html -->
+{% extends 'customer_service/base.html' %}
+
+{% block title %}Service Requests{% endblock %}
+
+{% block content %}
+    <h2>Service Requests</h2>
+    <ul>
+        {% for request in service_requests %}
+             
+            <li><a href="{% url 'service_request_detail' id=request.id %}">{{ request.type }}</a></li> 
+        {% endfor %}
+    </ul>
+    
+{% endblock %}

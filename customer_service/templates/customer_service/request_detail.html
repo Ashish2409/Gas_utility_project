@@ -1,0 +1,14 @@
+<!-- customer_service/templates/customer_service/request_detail.html -->
+{% extends 'customer_service/base.html' %}
+
+{% block title %}{{ request.type }} - Request Detail{% endblock %}
+
+{% block content %}
+    <h2>{{ request.type }}</h2>
+    <p><strong>Status:</strong> {{ request.status }}</p> 
+    
+    <p><strong>Details:</strong> {{ request.details }}</p>
+    <p><strong>Submission Time:</strong> {{ request.submission_time }}</p>
+    <p><strong>Resolution Time:</strong> {{ request.resolution_time }}</p>
+    <!-- Add more details here -->
+{% endblock %}
