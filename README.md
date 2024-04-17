@@ -12,12 +12,6 @@ Communication Tools: Built-in messaging features allow staff to communicate with
 Reporting and Analytics: The system generates reports and analytics to identify service request trends, enabling informed decision-making and process improvements.
 Installation
 To run Gas Utility Management System locally, follow these steps:
-
-bash
-Copy code
-# Clone the repository
-git clone https://github.com/Ashish2409/gas-utility-management.git
-
 # Navigate to the project directory
 cd gas-utility-management
 
@@ -25,9 +19,6 @@ cd gas-utility-management
 pip install -r requirements.txt
 Usage
 After installing the project dependencies, start the Django development server:
-
-bash
-Copy code
 python manage.py runserver
 Access the Gas Utility Management System by visiting http://localhost:8000 in your web browser.
 
